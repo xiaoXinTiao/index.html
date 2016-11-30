@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+     <meta charset ="utf-8">
+	<title></title>
+</head>
+<body>
+<div id="message">目前没有消息</div>
+<input type = "button" value = "点击我" onclick = "useAndroid()">
+</body>
+<script>
+//javascript:脚本文件html
+function useAndroid(){
+        android.changeText();
+}
+function useJs(){
+    //表示从网页上找到id为message的元素，将它保存在一个名为msg的变量中
+    var msg = document.getElementById("message");
+    //更改msg的内部html代码
+    msg.innerHTML = "收到了来自安卓的信息";
+    }
+</script>
+</html>
